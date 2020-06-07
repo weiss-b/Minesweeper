@@ -26,7 +26,6 @@ int main()
     const int COL_MAX = 25, ROW_MAX = 16, NUM_MINES = 50;
     bool endGame = false, win = false, debug = false;
     Tile board[ROW_MAX][COL_MAX];
-    int countabc = 0;
     // Load textures and set sprites
     LoadTextures();
     LoadSprites();
@@ -37,7 +36,6 @@ int main()
 
     while (window.isOpen())
     {
-        cout << countabc++ << endl;
         sf::Event event;
 
         while (window.pollEvent(event))
